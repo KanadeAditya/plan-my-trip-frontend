@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+form{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  width: 60vw;
+  gap: 15px;
+  margin: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 40px;
+  padding: 50px;
+}
+
+form input {
+  height: 30px;
+  font-size: large;
+  border: 1px solid aqua;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+select{
+  height: 30px;
+  font-size: large;
+  border: 1px solid aqua;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+input[type=submit]{
+  background-color: #61dafb;
+  width: 40vw;
+  margin: auto;
+  height: 30px;
+  font-size: larger;
+  border-radius: 25px;
+}
+
+.cards{
+  border: 2px solid aqua;
+  margin: 15px auto 15px auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 60vw;
+  border-radius: 50px;
+  padding: 15px;
+}
+
+.delete{
+  background-color: red;
+  height: 30px;
+  color: azure;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.delete:hover{
+  transform: scale(1.2);
+  transition: 0.3s;
+  height: 30px;
+  color: azure;
+  border-radius: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
